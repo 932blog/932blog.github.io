@@ -142,10 +142,25 @@
 <h3 id="A1-GitHub-Pages-是什么？"><a href="#A1-GitHub-Pages-是什么？" class="headerlink" title="A1) GitHub Pages 是什么？"></a>A1) GitHub Pages 是什么？</h3><p>GitHub Pages 是什么？具体解答可以看 GitHub 官方提供的介绍：What is GitHub Pages? – GitHub Help</p>
 <p>简单点说 GitHub Pages 是由 GitHub 官方提供的一种免费的静态站点托管服务，让我们可以在 GitHub 仓库里托管和发布自己的静态网站页面。</p>
 <h3 id="A2-Hexo-是什么？"><a href="#A2-Hexo-是什么？" class="headerlink" title="A2) Hexo 是什么？"></a>A2) Hexo 是什么？</h3><p>Hexo 是一个快速、简洁且高效的静态博客框架，它基于 Node.js 运行，可以将我们撰写的 Markdown 文档快速解析渲染成静态的 HTML 网页。</p>
-<p>官网：hexo.io<br>2.2 准备 GitHub<br>我们在 GitHub 上面注册一个 free 账号，夜梦这里以夜梦自己的邮箱（<a href="mailto:&#97;&#x64;&#x6d;&#x69;&#110;&#64;&#x79;&#101;&#x6d;&#x65;&#110;&#x67;&#x73;&#116;&#97;&#114;&#46;&#x63;&#111;&#109;">&#97;&#x64;&#x6d;&#x69;&#110;&#64;&#x79;&#101;&#x6d;&#x65;&#110;&#x67;&#x73;&#116;&#97;&#114;&#46;&#x63;&#111;&#109;</a>）为例子演示（正好以前没有注册过）：</p>
+<p>官网：hexo.io<br>2.2 准备 GitHub<br>我们在 GitHub 上面注册一个 free 账号，夜梦这里以夜梦自己的邮箱（<a href="mailto:&#x61;&#x64;&#109;&#105;&#110;&#x40;&#121;&#x65;&#109;&#x65;&#110;&#103;&#115;&#x74;&#x61;&#114;&#x2e;&#99;&#x6f;&#109;">&#x61;&#x64;&#109;&#105;&#110;&#x40;&#121;&#x65;&#109;&#x65;&#110;&#103;&#115;&#x74;&#x61;&#114;&#x2e;&#99;&#x6f;&#109;</a>）为例子演示（正好以前没有注册过）：</p>
 <h2 id="B-准备-GitHub"><a href="#B-准备-GitHub" class="headerlink" title="B) 准备 GitHub"></a>B) 准备 GitHub</h2><p>我们在 GitHub 上面注册一个 free 账号。</p>
 <p><img src="/2024/08/28/HEXO-github%E5%AE%89%E8%A3%85%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/free.jpg" alt="free"></p>
 <p><hlw>注册成功～</hlw></p>
+<h2 id="C-本地连接-GitHub"><a href="#C-本地连接-GitHub" class="headerlink" title="C) 本地连接 GitHub"></a>C) 本地连接 GitHub</h2><h3 id="C1-配置本地用户名与邮箱"><a href="#C1-配置本地用户名与邮箱" class="headerlink" title="C1) 配置本地用户名与邮箱"></a>C1) 配置本地用户名与邮箱</h3><p>在本地创建一个文件夹，之后在里面运作, 连接到github。</p>
+<p><img src="/2024/08/28/HEXO-github%E5%AE%89%E8%A3%85%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/git.jpg" alt="git"></p>
+<h3 id="C2-创建-SSH-密匙"><a href="#C2-创建-SSH-密匙" class="headerlink" title="C2) 创建 SSH 密匙"></a>C2) 创建 SSH 密匙</h3><p><img src="/2024/08/28/HEXO-github%E5%AE%89%E8%A3%85%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/ssh.jpg" alt="ssh"></p>
+<h3 id="C3-在-GitHub-中添加-SSH-密钥"><a href="#C3-在-GitHub-中添加-SSH-密钥" class="headerlink" title="C3) 在 GitHub 中添加 SSH 密钥"></a>C3) 在 GitHub 中添加 SSH 密钥</h3><ol>
+<li>打开 id_rsa.pub 并复制里面的内容<br>2)这个时候我们回到 GitHub，进入 Settings：<br><a target="_blank" rel="noopener" href="https://github.com/932blog/932blog.github.io--%3E%E5%8F%B3%E4%B8%8A%E8%A7%92--%3Esettings--%3ESSH">https://github.com/932blog/932blog.github.io--&gt;右上角--&gt;settings--&gt;SSH</a> and GPG keys–&gt;New SSH key</li>
+</ol>
+<p><img src="/2024/08/28/HEXO-github%E5%AE%89%E8%A3%85%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/sshkey.jpg" alt="sshkey"></p>
+<p>Title 随便取，然后把 id_rsa.pub 里面的内容到复制到 Key 中，点击 Add SSH key：</p>
+<p>保存完毕以后，我们可以在本地验证一下连接。</p>
+<p>C4) 验证连接</p>
+<pre> ssh -T git@github.com </pre>
+
+<p>出现 “Are you sure……”，输入 yes 回车确认。</p>
+<p>若出现下图的提示即连接成功：</p>
+<p><img src="/2024/08/28/HEXO-github%E5%AE%89%E8%A3%85%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/success.jpg" alt="success"></p>
 
       
     </div>
